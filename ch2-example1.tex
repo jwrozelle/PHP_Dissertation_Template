@@ -1,0 +1,63 @@
+\chapter{Example Chapter Two (And Some Notes About Reference Management)}
+
+\noindent You will find some additional examples of how references are formatted in the \texttt{main.tex} file (which organizes all the pieces of the \LaTeX~document like chapters, titles, and applies some additional formatting). In the preamble, observe the \texttt{\textbackslash addbibresource\{betterbiblatex-references.bib\}}. This is what tells \LaTeX~where to look for references. 
+
+You can automatically link reference managers like Zotero and Mendeley to Overleaf. However, there were some small formatting things I wished to edit that this integration did not solve. Specifically, using short names. For example, "World Health Organization" is better presented as "WHO" in-text, but I want the full "World Health Organization" in the reference list. The default integration with overleaf does not accommodate that.
+
+Instead, it can be accomplished with the Better BibTex plugin on Zotero and an added field (i.e., adding "\texttt{tex.shortauthor: WHO}" to the "Extra" field in Zotero), then exporting the full library with Better BibTex. You can then upload this export manually to Overleaf. A small extra step in the workflow, but I did not find it too annoying, since my reference library was not frequently updated at the dissertation assembly stage.
+
+\section{Methods}
+
+Quisque sit amet purus at sapien ullamcorper egestas quis vitae eros. Mauris pharetra pharetra sollicitudin. In eu tincidunt lorem, eget interdum nisl. Maecenas id tellus pharetra, mattis diam eget, tincidunt erat. Donec quis pretium mauris, ut eleifend urna. Integer eu magna ac mi ullamcorper commodo. Etiam suscipit turpis eu neque auctor commodo. Proin consectetur erat efficitur justo viverra, et suscipit velit venenatis. Fusce ut tortor nisl. Phasellus commodo vitae massa ut posuere. Vivamus venenatis et risus vitae bibendum. Donec mollis lacinia cursus. 
+
+\section{Results}
+
+Donec malesuada egestas magna, eu tempor velit elementum nec. Etiam cursus euismod quam. Curabitur sagittis ac odio id tincidunt. Aliquam sit amet vestibulum massa, sed molestie ligula. Nam sodales eu nibh posuere volutpat. In molestie quis dolor non dignissim. Ut nec elementum ante. Mauris fringilla fringilla libero ut congue.
+
+\begin{table}[H]
+\begin{singlespace}
+\begin{threeparttable}
+\caption{Service Provision Assessment sample for Tanzania, Nepal, Malawi, Haiti, and Afghanistan}
+\label{ch2:tab:hf_sample}
+\centering
+\begin{tabular}{
+  l
+  >{\centering\arraybackslash}p{1.9cm}
+  >{\centering\arraybackslash}p{1.9cm}
+  >{\centering\arraybackslash}p{2.2cm}
+  >{\centering\arraybackslash}p{1.5cm}
+  >{\centering\arraybackslash}p{1.5cm}
+}
+\hline \hline
+ & \multicolumn{3}{c}{\textbf{Health Facilities}} & \multicolumn{2}{c}{\textbf{Client visits observed}}\\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-6}
+ & Sampling frame & Sampled & Successfully audited & ANC & Sick child \\
+\hline
+Afghanistan 2018--19 & 231 & 160 & 142 & 491 & 574 \\
+Haiti 2017--2018 & 1,033 & 1,033 & 1,007 & 1,526 & 2,166 \\
+Malawi 2014 & 1,060 & 1,060 & 977 & 2,105 & 3,329 \\
+Nepal 2015 & 4,719 & 992 & 963 & 1,509 & 2,186 \\
+Tanzania 2014--15 & 7,102 & 1,200 & 1,188 & 4,007 & 4,961 \\
+\hline
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\fontsize{9pt}{10.5pt}\selectfont
+\item Note: ANC = antenatal care.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{singlespace}
+\end{table}
+
+Praesent eu aliquet orci, at pretium mauris. Proin ornare nibh sem, nec malesuada diam hendrerit quis. Nullam eu risus neque. Integer ultrices sit amet mi quis faucibus. Nulla sit amet libero ante. Nulla feugiat metus felis. Vivamus pulvinar finibus ornare. Aenean vulputate tincidunt mi vitae laoreet. Nam malesuada tristique quam, vitae tincidunt est tempor ut. Vestibulum vestibulum enim quis diam pellentesque, at tempor sapien pharetra. Ut felis libero, hendrerit eu accumsan vel, placerat ac sem. Proin facilisis blandit felis, id dignissim leo aliquam vel. 
+
+\section{Discussion}
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nunc libero. In sollicitudin luctus dapibus. Suspendisse potenti. Proin feugiat nisl et elit rutrum iaculis. Donec vel massa tempus, placerat justo in, ullamcorper mi. Nullam vel pellentesque augue. Vivamus iaculis turpis a arcu viverra, non rutrum nunc varius. Phasellus dignissim ante feugiat placerat tincidunt. Maecenas ut nulla sit amet lacus volutpat consequat et sed mauris. Praesent justo urna, aliquet quis aliquam in, tempor eu nunc.
+
+Praesent eu aliquet orci, at pretium mauris. Proin ornare nibh sem, nec malesuada diam hendrerit quis. Nullam eu risus neque. Integer ultrices sit amet mi quis faucibus. Nulla sit amet libero ante. Nulla feugiat metus felis. Vivamus pulvinar finibus ornare. Aenean vulputate tincidunt mi vitae laoreet. Nam malesuada tristique quam, vitae tincidunt est tempor ut. Vestibulum vestibulum enim quis diam pellentesque, at tempor sapien pharetra. Ut felis libero, hendrerit eu accumsan vel, placerat ac sem. Proin facilisis blandit felis, id dignissim leo aliquam vel.
+
+Vestibulum consectetur at mi vitae vestibulum. Proin tristique ultrices sollicitudin. Integer tortor lacus, luctus id rhoncus non, viverra tristique est. Maecenas scelerisque, nibh sit amet consectetur mollis, diam quam venenatis neque, eget accumsan mauris arcu sit amet quam. Donec eu orci nunc. Suspendisse et massa at dui eleifend tincidunt. Duis at faucibus orci. Morbi volutpat, odio eget facilisis mattis, tortor felis laoreet dui, eget euismod nibh nibh sed felis. Sed eget ullamcorper mauris. Quisque congue augue nec tempus luctus. Ut tempor lacus tortor, non hendrerit ante scelerisque a. Vivamus et elit faucibus, dapibus ex vel, ultricies nulla. Suspendisse nec odio malesuada, condimentum metus eu, venenatis ipsum. Sed magna lorem, porta nec leo ut, luctus maximus erat.
+
+Suspendisse fermentum erat elit, ut egestas augue tempor in. Vivamus scelerisque, enim eget congue egestas, sem est ultricies felis, ac interdum felis velit sed quam. Quisque hendrerit egestas porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dapibus diam vel cursus. Nulla faucibus pulvinar ligula, vitae vehicula velit mollis a. Donec justo ex, malesuada at dictum ut, lacinia eu nisl. Phasellus nisl orci, euismod vitae sagittis in, pretium ut tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu enim dignissim, viverra ligula at, porta lectus. Duis ac elit sit amet nisi commodo feugiat. Mauris sed tellus enim. 

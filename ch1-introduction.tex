@@ -1,0 +1,30 @@
+\chapter{Introduction}
+
+\noindent Again, note the \texttt{\textbackslash noindent} command to start this section off. You should also use the \texttt{\textbackslash autocite} command for citations, rather than the normal "cite" command for the package that supports Chicago Manual of Style \autocite{rozelle_effect_2023}. Chapter headings use the \texttt{\textbackslash chapter\{Chapter Name\} command}.
+
+Anything you reference here will be automatically added to your references at the end. You can also use a \texttt{\textbackslash citeyear} command to cite the year, as Rozelle, et al. (\citeyear{rozelle_effect_2023}) sometimes does. This will add it to the bibliography, but be sure to add in parentheses, as these are not automatically added with the \texttt{\textbackslash citeyear} command. You can 
+
+\section{Section}
+
+Here is a section (using the \texttt{\textbackslash section} command), for a level one heading. I'm going to write a bit more text so this does not look weird.
+
+I would also note that when you use one of these commands, (and this also applies to figures, tables, and equations) you can establish a label to reference that item dynamically using the \texttt{\textbackslash label\{labelname\}} command. Then you may reference it using the \texttt{\textbackslash ref\{label-name\}} command (for example, see Section \ref{ch2:sec:another}).
+
+I like to use prefixes like \texttt{ch1:} and \texttt{tab:} or \texttt{fig:} to help me remember what I'm referencing (in \LaTeX~using overleaf, these show up as suggestions for autofill; see Section \ref{ch1:subsec:lvl2heading}). I can also reference a figure or section heading in another chapter (see Table \ref{ch2:tab:hf_sample}).
+
+\subsection{Level 2 heading}
+\label{ch1:subsec:lvl2heading}
+
+Here is a section (using the \texttt{\textbackslash subsection\{Level 2 heading title\}} command), for a level two heading. Subsections still appear on the in the Table of Contents.
+
+\subsubsection{Level 3 heading}
+
+If absolutely necessary, you can use a level 3 heading with with the \texttt{\textbackslash subsubsection\{Level 3 heading title\}} command), for a level three heading. Level 3 headings (or subsubsections) do not appear in the in the Table of Contents.
+
+
+\section{Another section}
+\label{ch2:sec:another}
+
+Other quick notes, the PHP formatting guide requires left alignment with a ragged right edge. This and spacing should generally be handled by this template.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium purus sit amet ex accumsan venenatis. Quisque ac porta sem, nec ultrices sem. Donec sapien turpis, efficitur sed mauris sit amet, pretium gravida risus. Morbi non odio a purus pulvinar aliquet sit amet in ipsum. Nullam consequat interdum neque sit amet gravida. Vivamus at pellentesque libero, posuere vehicula nisl. Curabitur finibus egestas nisi, et faucibus nisi euismod nec. Sed ac viverra est. Mauris laoreet, libero nec hendrerit malesuada, sem magna elementum risus, eget iaculis massa felis non sapien. Aliquam tempus felis vitae neque pharetra tristique. Mauris in est sit amet diam malesuada suscipit. Maecenas vel pulvinar diam. Duis ornare at sem non blandit. Nunc id nibh nunc. Quisque lacinia dui mauris, a elementum lacus vestibulum sit amet. 
